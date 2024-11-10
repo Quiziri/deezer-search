@@ -1,0 +1,72 @@
+﻿@page "/"
+@using DeezerSearch.Models
+@using DeezerSearch.Services
+@inject DeezerService _deezerService
+@rendermode InteractiveServer
+
+<PageTitle>CodeTotal :: Deezer Search Tracks</PageTitle>
+
+<div class="mb-4 mt-4">
+    <div class="row">
+        <div class="col">
+            <input @bind="_searchTerm" type="text" placeholder="Digite um termo para a busca..." class="form-control">
+        </div>
+        <div class="col">
+            <button @onclick="SearchTracks" class="btn btn-primary">Procurar</button>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info" role="alert">
+    @_tracks.Count resultado(s) encontrado(s).
+</div>
+
+<div class="row mb-4">
+    @foreach(var track in _tracks)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <img src="@track.Album.Cover_medium" alt="@track.Title" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@track.Title</h5>
+                    <p class="card-text">@track.Artist.Name</p>
+                    <a target="_blank" href="@track.Link" class="btn btn-primary">ver no Deezer</a><br>
+                    <audio controls class="mt-4">
+                        <source src="@track.Preview" type="audio/mpeg">
+                        Seu navegador não suporta o elemento <code>audio</code>
+                    </audio>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@if(!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @_errorMessage
+    </div>
+}
+
+@code {
+    private string _searchTerm = string.Empty;
+
+    private List<TrackData> _tracks = new List<TrackData>();
+
+    private string? _errorMessage = string.Empty;
+
+    private async Task SearchTracks()
+    {
+        _errorMessage = null;
+        try
+        {
+            var response = await _deezerService.SearchTracksAsync(_searchTerm);
+            _tracks = response.Data;
+        }
+        catch (Exception ex)
+        {
+            _errorMessage = ex.Message;
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

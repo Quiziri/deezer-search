@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\quizi\\Projetos\\CodeTotal\\DeezerBlazor\\deezer-search\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\deezer-search.bundle.scp.css",
+      "PackagePath": "staticwebassets\\deezer-search.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\quizi\\Projetos\\CodeTotal\\DeezerBlazor\\deezer-search\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\quizi\\Projetos\\CodeTotal\\DeezerBlazor\\deezer-search\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\quizi\\Projetos\\CodeTotal\\DeezerBlazor\\deezer-search\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\quizi\\Projetos\\CodeTotal\\DeezerBlazor\\deezer-search\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.deezer-search.props",
+      "PackagePath": "build\\deezer-search.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.deezer-search.props",
+      "PackagePath": "buildMultiTargeting\\deezer-search.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.deezer-search.props",
+      "PackagePath": "buildTransitive\\deezer-search.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.deezer-search.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

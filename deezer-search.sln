@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "deezer-search", "deezer-search.csproj", "{F69D9EA6-F865-4BAA-9B84-8A004BB5EF02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F69D9EA6-F865-4BAA-9B84-8A004BB5EF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69D9EA6-F865-4BAA-9B84-8A004BB5EF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69D9EA6-F865-4BAA-9B84-8A004BB5EF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69D9EA6-F865-4BAA-9B84-8A004BB5EF02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEB34E59-8DB0-49D9-AFCA-5EA671C87242}
+	EndGlobalSection
+EndGlobal
